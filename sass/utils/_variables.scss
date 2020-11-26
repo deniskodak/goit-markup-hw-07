@@ -1,0 +1,44 @@
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+$primaryTextColor: #757575;
+$titleColor: #212121;
+$accentColor: #2196f3;
+$footerTextColor: rgba(255, 255, 255, 0.6);
+
+$white: #ffffff;
+$primaryBgColor: #2f303a;
+$secondaryBgColor: #f5f4fa;
+
+$socialsBg: rgba(255, 255, 255, 0.1);
+$socialColor: #afb1b8;
+
+$borderHeader: #ececec;
+$borderPortfolio: #eeeeee;
+
+$overlayService: rgba(47, 48, 58, 0.8);
+$overlayPortfolioCard: rgba(33, 150, 243, 0.9);
+$overlayBackdrop: rgba(0, 0, 0, 0.2);
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+
+  --primary-white-color: #ffffff;
+  --primary-bg-color: #2f303a;
+  --secondary-bg-color: #f5f4fa;
+
+  --socials-bg-color: rgba(255, 255, 255, 0.1);
+  --socials-color: #afb1b8;
+
+  --portfolio-border: #eeeeee;
+  --header-border: #ececec;
+
+  --backdrop-cl: rgba(0, 0, 0, 0.2);
+  --pseudo-bg-color: rgba(47, 48, 58, 0.8);
+  --overlay-secondary: rgba(33, 150, 243, 0.9);
+
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}

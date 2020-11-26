@@ -1,0 +1,26 @@
+.contacts-header {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-header .link {
+  align-items: center;
+}
+.contacts-header .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-header .link {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+
+  transition: 250ms var(--cubic);
+}
+.icon-contacts {
+  margin-right: 10px;
+}

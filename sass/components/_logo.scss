@@ -1,0 +1,23 @@
+.logo {
+  display: block;
+
+  color: var(--accent-text-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-footer {
+  margin-bottom: 20px;
+}
+
+.logo-header .logo-studio {
+  color: var(--title-text-color);
+}
+.logo-footer .logo-studio {
+  color: var(--primary-white-color);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-text-color);
+}
