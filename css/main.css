@@ -597,11 +597,6 @@ h6 {
   margin-right: 10px;
 }
 
-.features-list .title,
-.team-list .title {
-  margin-bottom: 10px;
-}
-
 .hero .title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -754,6 +749,10 @@ h6 {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
+}
+
+.team-list .title {
+  margin-bottom: 10px;
 }
 
 .team-list .text {
