@@ -1,0 +1,24 @@
+.contacts-footer {
+  font-style: normal;
+  line-height: 1.71;
+}
+.contacts-footer .link {
+  display: inline-block;
+
+  color: var(--footer-contacts-color);
+
+  transition: 250ms var(--cubic);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  fill: var(--accent-text-color);
+  color: var(--accent-text-color);
+}
+
+/* Стили для локации офиса*/
+.contacts .location {
+  color: var(--primary-white-color);
+}
+.contacts-footer .link:not(:last-child) {
+  margin-bottom: 9px;
+}

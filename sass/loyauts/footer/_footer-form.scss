@@ -1,0 +1,46 @@
+.mailing-box {
+  display: inline-block;
+  position: relative;
+}
+.label-mailing {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: transform 250ms var(--cubic), color 250ms var(--cubic);
+}
+.label-mailing,
+.input-mailing {
+  font-size: 16px;
+  line-height: 1.25;
+}
+.input-mailing {
+  background-color: transparent;
+  padding: 15px 16px;
+  width: 358px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: var(--footer-contacts-color);
+}
+.input-mailing:focus + .label-mailing,
+.input-mailing:not(:placeholder-shown) + .label-mailing {
+  transform: translate(-150%, -50%);
+  color: var(--primary-white-color);
+}
+.button-mailing {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 12px;
+}
+.button-mailing:hover .icon-plane,
+.button-mailing:focus .icon-plane {
+  fill: var(--accent-text-color);
+}
+.icon-plane {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-white-color);
+}

@@ -5,24 +5,13 @@
 @import './components/socials-list';
 @import './components/buttons';
 @import './components/vissually-hidden';
-@import './components/backdrop';
-@import './components/modal';
-@import './components/icon-close';
-@import './components/form';
 @import './loyauts/header/header';
 @import './loyauts/header/nav-menu';
 @import './loyauts/header/contacts';
-.features-list .title,
-.team-list .title {
-  margin-bottom: 10px;
-}
-
-@import './loyauts/hero';
-@import './loyauts/features-section/features';
-@import './loyauts/service-section/service';
-@import './loyauts/team-section/team';
-@import './loyauts/clients';
-
+@import './loyauts/portolio-page/filter-buttons';
+@import './loyauts/portolio-page/card-list';
+@import './loyauts/portolio-page/thumb';
+@import './loyauts/portolio-page/card-overlay';
 @import './loyauts/footer/footer-container';
 @import './loyauts/footer/footer-contacts';
 @import './loyauts/footer/footer-calling';
