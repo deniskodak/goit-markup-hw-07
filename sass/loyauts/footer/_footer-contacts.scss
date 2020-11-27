@@ -3,22 +3,23 @@
   line-height: 1.71;
 }
 .contacts-footer .link {
+  @extend %link;
   display: inline-block;
 
-  color: var(--footer-contacts-color);
+  color: $footerTextColor;
 
-  transition: 250ms var(--cubic);
-}
-.contacts .link:hover,
-.contacts .link:focus {
-  fill: var(--accent-text-color);
-  color: var(--accent-text-color);
-}
+  transition: 250ms $cubic;
 
-/* Стили для локации офиса*/
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    color: $accentColor;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
 .contacts .location {
-  color: var(--primary-white-color);
-}
-.contacts-footer .link:not(:last-child) {
-  margin-bottom: 9px;
+  color: $white;
 }

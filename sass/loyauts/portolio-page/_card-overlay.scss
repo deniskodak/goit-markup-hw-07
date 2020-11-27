@@ -2,39 +2,30 @@
   position: relative;
   overflow: hidden;
 }
-.portfolio-thumb::before {
+.thumb-overlay {
   position: absolute;
-  content: '';
-  display: block;
-
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--overlay-secondary);
+  background-color: $overlayPortfolioCard;
   transform: translateY(100%);
-  transition: 250ms var(--cubic);
-}
-
-.porfolio-link:hover .portfolio-thumb::before,
-.porfolio-link:focus .portfolio-thumb::before {
-  transform: translateY(0);
+  transition: 250ms $cubic;
 }
 
 .thumb-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 130%);
-
   width: 322px;
 
-  font-size: 18px;
-  line-height: 1.55;
-  color: var(--primary-white-color);
+  @include font(18px, 1.55);
+  color: $white;
 
-  transition: transform 250ms var(--cubic);
-}
-
-.porfolio-link:hover .thumb-text,
-.porfolio-link:focus .thumb-text {
   transform: translate(-50%, -50%);
+  transition: transform 250ms $cubic;
+}
+.porfolio-link:hover .thumb-overlay,
+.porfolio-link:focus .thumb-overlay {
+  transform: translateY(0);
 }

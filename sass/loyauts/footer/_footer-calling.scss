@@ -2,8 +2,7 @@
   display: block;
   margin-bottom: 20px;
 
-  font-weight: bold;
-  line-height: 1.142;
+  @include font(14px, 1.142, 700);
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: $white;
 }

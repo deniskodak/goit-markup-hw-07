@@ -1,19 +1,17 @@
 .socials-list {
-  display: flex;
-  justify-content: center;
+  @include flex();
+  @extend %list;
 }
 .socials-list .item:not(:last-child) {
   margin-right: 10px;
 }
 .socials-link {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
+  @include flex(inline-flex);
+  @extend %link;
   width: 44px;
   height: 44px;
 
   border-radius: 50%;
 
-  transition: 250ms var(--cubic);
+  transition: 250ms $cubic;
 }

@@ -1,13 +1,11 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--primary-bg-color);
+  background-color: $primaryBgColor;
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @include flex(flex, space-between, baseline);
 }
 
 .footer-box:nth-child(1) {

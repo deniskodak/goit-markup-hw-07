@@ -1,12 +1,16 @@
-.list {
+%list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.link {
+%link {
   text-decoration: none;
 }
 .icon {
-  transition: fill 250ms var(--cubic);
+  transition: fill 250ms $cubic;
+}
+%flexCenteredY {
+  display: flex;
+  align-items: center;
 }

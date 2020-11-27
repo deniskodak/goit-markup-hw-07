@@ -1,21 +1,19 @@
-p {
-  margin: 0;
-}
-
 body {
-  color: var(--primary-text-color);
+  color: $primaryTextColor;
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
   font-size: 14px;
+  letter-spacing: 0.03em;
 
-  background-color: var(--primary-white-color);
+  background-color: $white;
 }
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
+p {
+  margin: 0;
+}
 h1,
 h2,
 h3,
@@ -34,15 +32,13 @@ h6 {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.section .title {
-  margin-top: 0;
-  margin-bottom: 50px;
 
-  color: var(--title-text-color);
+  .title {
+    margin-bottom: 50px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+    color: $titleColor;
+
+    @include font(36px, 1.16, 700);
+    text-align: center;
+  }
 }

@@ -1,18 +1,17 @@
 .features-list {
   display: flex;
-}
-.features-list .item {
-  width: calc((100% - 3 * 30px) / 4);
-}
-.features-list .item:not(:last-child) {
-  margin-right: 30px;
+  @extend %list;
+
+  .item {
+    width: calc((100% - 3 * 30px) / 4);
+  }
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .features-list .title {
   margin-bottom: 10px;
-}
-.features-list .title {
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 1.14);
   text-transform: uppercase;
   text-align: left;
 }
@@ -20,9 +19,7 @@
   line-height: 1.71;
 }
 .features-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex();
   margin-bottom: 30px;
 
   width: 270px;

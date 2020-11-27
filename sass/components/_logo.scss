@@ -1,23 +1,17 @@
 .logo {
   display: block;
 
-  color: var(--accent-text-color);
+  color: $accentColor;
   font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font(26px, 1.19, 700);
+  @extend %link;
+}
+.logo-header .logo-studio {
+  color: $titleColor;
+}
+.logo-footer .logo-studio {
+  color: $white;
 }
 .logo-footer {
   margin-bottom: 20px;
-}
-
-.logo-header .logo-studio {
-  color: var(--title-text-color);
-}
-.logo-footer .logo-studio {
-  color: var(--primary-white-color);
-}
-.logo:hover,
-.logo:focus {
-  color: var(--accent-text-color);
 }

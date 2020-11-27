@@ -1,14 +1,9 @@
 .contacts-header {
   display: flex;
   margin-left: auto;
+  @extend %list;
 }
-.contacts-header .link {
-  align-items: center;
-}
-.contacts-header .link {
-  color: var(--primary-text-color);
-  fill: currentColor;
-}
+
 .contacts-header .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -17,13 +12,21 @@
   display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
-  font-weight: 500;
-  line-height: 1.143;
+  @extend %link;
+  @include font(14px, 1.143, 500);
   letter-spacing: 0.02em;
+  color: $primaryTextColor;
 
-  transition: 250ms var(--cubic);
+  transition: 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 .icon-contacts {
   margin-right: 10px;
+  fill: currentColor;
 }

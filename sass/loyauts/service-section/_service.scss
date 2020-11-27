@@ -2,12 +2,19 @@
   padding-top: 0;
 }
 .service-list {
-  display: flex;
-  flex-wrap: wrap;
+  @include flex(flex, wrap, start);
+  @extend %list;
 }
 .service-list .item {
   position: relative;
   width: 370px;
+
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
 }
 .service-overlay {
   position: absolute;
@@ -18,18 +25,12 @@
   min-height: 70px;
   padding-top: 27px;
   padding-bottom: 27px;
-  background-color: var(--pseudo-bg-color);
+  background-color: $overlayService;
 }
 
 .service-overlay .text {
   text-align: center;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: $white;
   font-weight: 700;
-}
-.service-list .item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-.service-list .item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
 }

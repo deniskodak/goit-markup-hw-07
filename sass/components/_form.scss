@@ -8,15 +8,14 @@
 .user-label {
   display: block;
   margin-bottom: 4px;
-}
 
-.user-label:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .user-label,
 .user-input {
-  font-size: 12px;
-  line-height: 1.17;
+  @include font(12px, 1.17);
   letter-spacing: 0.01em;
 }
 .input-field {
@@ -32,13 +31,14 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  transition: border-color 250ms var(--cubic);
-}
-.user-input:focus {
-  border-color: var(--accent-text-color);
+  transition: border-color 250ms $cubic;
+
+  &:focus {
+    border-color: $accentColor;
+  }
 }
 .user-input:focus + .icon {
-  fill: var(--accent-text-color);
+  fill: $accentColor;
 }
 .user-form .icon {
   position: absolute;
@@ -49,7 +49,7 @@
   width: 18px;
   height: 18px;
 
-  fill: var(--title-text-color);
+  fill: $titleColor;
 }
 
 .form-comment {
@@ -64,18 +64,17 @@
   resize: none;
   outline: none;
 
-  transition: border-color 250ms var(--cubic);
-}
-.form-comment:focus {
-  border-color: var(--accent-text-color);
+  transition: border-color 250ms $cubic;
+
+  &:focus {
+    border-color: $accentColor;
+  }
 }
 .form-comment:focus::placeholder {
-  color: var(--accent-text-color);
+  color: $accentColor;
 }
 .policy-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex();
   margin-bottom: 30px;
 }
 .policy-checkbox {
@@ -94,8 +93,7 @@
   position: relative;
   padding-left: 24px;
   display: inline-block;
-  font-size: 14px;
-  line-height: 1.714;
+  @include font(14px, 1.714);
 }
 
 .policy-label::before {
@@ -110,12 +108,12 @@
   vertical-align: center;
   margin-right: 7px;
 
-  border: 2px solid var(--title-text-color);
+  border: 2px solid $titleColor;
   border-radius: 2px;
 }
 .policy-checkbox:checked + .policy-label::before {
-  border-color: var(--accent-text-color);
-  background-color: var(--accent-text-color);
+  border-color: $accentColor;
+  background-color: $accentColor;
   background-image: url('../images/modal/icon-checked.svg');
   background-origin: border-box;
   background-position: center;
@@ -124,16 +122,17 @@
 }
 .policy-link {
   cursor: pointer;
-  color: var(--accent-text-color);
+  color: $accentColor;
 }
 
 .user-form .button.primary {
   display: block;
   margin-right: auto;
   margin-left: auto;
-}
-.user-form .button.primary:hover,
-.user-form .button.primary:focus {
-  background-color: #188ce8;
-  color: var(--primary-white-color);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: $white;
+  }
 }

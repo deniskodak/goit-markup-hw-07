@@ -10,11 +10,11 @@
   height: 30px;
   padding: 0;
 
-  background-color: var(--primary-white-color);
+  background-color: $white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition: fill 250ms var(--cubic);
+  transition: fill 250ms $cubic;
 }
 .icon-close {
   width: 18px;
@@ -23,6 +23,6 @@
 
 .close-btn:hover,
 .close-btn:focus {
-  fill: var(--accent-text-color);
+  fill: $accentColor;
   cursor: pointer;
 }
