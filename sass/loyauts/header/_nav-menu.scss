@@ -29,14 +29,6 @@
     color: $accentColor;
   }
 }
-
-.link.current {
-  color: $accentColor;
-
-  &::after {
-    transform: scaleX(1);
-  }
-}
 .site-nav .link::after {
   position: absolute;
   bottom: 0;
@@ -51,6 +43,14 @@
   transform: scaleX(0);
   transition: 250ms $cubic;
 }
+.link.current {
+  color: $accentColor;
+
+  &::after {
+    transform: scaleX(1);
+  }
+}
+
 .site-nav .link:hover::after,
 .site-nav .link:focus::after {
   transform: scaleX(1);

@@ -429,14 +429,6 @@ h6 {
   color: #2196f3;
 }
 
-.link.current {
-  color: #2196f3;
-}
-
-.link.current::after {
-  transform: scaleX(1);
-}
-
 .site-nav .link::after {
   position: absolute;
   bottom: 0;
@@ -450,6 +442,14 @@ h6 {
   background-color: #2196f3;
   transform: scaleX(0);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link.current {
+  color: #2196f3;
+}
+
+.link.current::after {
+  transform: scaleX(1);
 }
 
 .site-nav .link:hover::after,
